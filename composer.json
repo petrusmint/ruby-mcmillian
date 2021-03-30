@@ -1,0 +1,45 @@
+{
+    "name": "webbongga/wordpress-2",
+    "description": "Wordpress project using Composer",
+    "authors": [
+        {
+            "name": "Randolf Sartagoda",
+            "email": "randolf.sartagoda@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "johnpbloch/wordpress": "^5.6",
+        "wpackagist-plugin/autoptimize": "*",
+        "wpackagist-plugin/contact-form-7": "*",
+        "wpackagist-plugin/contact-form-cfdb7": "*",
+        "wpackagist-plugin/add-on-contact-form-7-mailpoet": "*",
+        "wpackagist-plugin/easy-twitter-feed-widget": "*",
+        "wpackagist-plugin/instant-comment-validation": "*",
+        "wpackagist-plugin/mailpoet": "*",
+        "wpackagist-plugin/optimus": "*",
+        "wpackagist-plugin/simple-301-redirects": "*",
+        "wpackagist-plugin/user-role-editor": "*",
+        "wpackagist-plugin/wck-custom-fields-and-custom-post-types-creator": "*",
+        "wpackagist-plugin/wordfence": "*",
+        "wpackagist-plugin/easy-wp-smtp": "*",
+        "wpackagist-plugin/wordpress-seo": "*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "core"
+    }
+}
