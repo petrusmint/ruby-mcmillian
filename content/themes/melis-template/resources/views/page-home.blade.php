@@ -17,19 +17,7 @@
 						<div class="img-cont text-center">
 							{!! get_the_post_thumbnail(11, 'single-post-thumbnail', ['style' => 'height:auto!important']) !!}
 							<!-- <a href="{{ get_post_meta(11, 'paypal', true) }}" class="paypal" target="_blank"></a> -->
-							<form style="padding-top:40px" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="AEAEK5DCRNN4L">
-								<table style="display:none">
-								<tr><td><input type="hidden" name="on0" value="Book 6 X 9">Book 6 X 9</td></tr><tr><td><select name="os0">
-								<option value="Option 1">Option 1 $11.99 USD</option>
-								<option value="Option 2 2015 Edition"> USD</option>
-								</select> </td></tr>
-								</table>
-								<input type="hidden" name="currency_code" value="USD">
-								<input type="image" src="@asset('images/paypal.png')" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-							</form>
+							
 						</div>
 					</div>
 					
@@ -39,7 +27,7 @@
 	</section>
 
 	<section id="author">
-		<div class="container">
+		<!-- <div class="container">
 			<div class="wrapper">
 				<div class="row">
 					<div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
@@ -49,6 +37,18 @@
 					</div>
 
 					<div class="col-md-7 d-flex" data-aos="fade-right" data-aos-duration="1000">
+						<div class="text-cont" id="book">
+							<h2 class="section-heading">{{ get_the_title(13) }}</h2>
+							{!! wpautop(get_post(13)->post_content) !!}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<div class="container">
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-md-12 d-flex text-center" data-aos="fade-right" data-aos-duration="1000">
 						<div class="text-cont" id="book">
 							<h2 class="section-heading">{{ get_the_title(13) }}</h2>
 							{!! wpautop(get_post(13)->post_content) !!}

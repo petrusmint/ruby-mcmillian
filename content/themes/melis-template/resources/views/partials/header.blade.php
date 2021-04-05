@@ -3,7 +3,7 @@
         <div class="for-menu">
             <div class="menu-area">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="#">{{ get_bloginfo("name", "display") }}</a>
+                    <a class="navbar-brand" href="/">{{ get_bloginfo("name", "display") }}</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -43,8 +43,9 @@
                                             <h3>{{ get_post_meta(9, 'des', true) }}</h3>
                                             <p>{{ get_post_meta(9, 'des2', true) }}</p>
                                             <div class="links">
-                                                <a href="{{ get_post_meta(9, 'amazon', true) }}" class="amazon" target="_blank"></a>
-                                                <a href="{{ get_post_meta(9, 'barnes', true) }}" class="barnes" target="_blank"></a>
+                                                <!-- <a href="{{ get_post_meta(9, 'amazon', true) }}" class="amazon" target="_blank"></a>
+                                                <a href="{{ get_post_meta(9, 'barnes', true) }}" class="barnes" target="_blank"></a> -->
+                                                <a href="{{ get_post_meta(9, 'buy the book now link', true) }}" class="btn-buy" target="_blank">Buy Now</a>
                                             </div>
                                         </div>
                                     </div>

@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/content/themes/melis-template",
-  "devUrl": "http://phyllis-pittman.local",
+  "devUrl": "http://simon-moore.local",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

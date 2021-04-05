@@ -11,7 +11,7 @@ use Roots\Sage\Template\BladeProvider;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('sage/themeFont', 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Montserrat:wght@300;400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:wght@300;400;500&display=swap');
+    wp_enqueue_style('sage/themeFont', 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Montserrat:wght@300;400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:wght@300;400;500&family=Mulish:wght@300;400;500;600;700&display=swap');
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 

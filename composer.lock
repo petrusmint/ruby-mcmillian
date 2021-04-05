@@ -430,15 +430,15 @@
         },
         {
             "name": "wpackagist-plugin/mailpoet",
-            "version": "3.60.5",
+            "version": "3.60.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/mailpoet/",
-                "reference": "trunk"
+                "reference": "tags/3.60.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/mailpoet.zip?timestamp=1616511390"
+                "url": "https://downloads.wordpress.org/plugin/mailpoet.3.60.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
