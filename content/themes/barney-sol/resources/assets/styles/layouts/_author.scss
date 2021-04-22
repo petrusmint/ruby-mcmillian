@@ -1,0 +1,44 @@
+#author {
+    height: auto;
+    padding: 100px 0;
+    background: $color1;
+
+    .text-cont {
+        align-self: center;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 700;
+            font-family: $jose;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 0 0 1em;
+        }
+
+        p {
+            color: #fff;
+            font-size: 13px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+       .text-cont {
+            text-align: center;
+            padding-top: 40px;
+        
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding: 50px 0;
+
+        .img-cont {
+            img {
+                width: 250px;
+            }
+        }
+    }
+}
