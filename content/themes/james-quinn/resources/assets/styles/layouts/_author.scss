@@ -1,0 +1,47 @@
+#author {
+    height: auto;
+    padding: 100px 0;
+    background: $color2;
+
+    .text-cont {
+        align-self: flex-start;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 700;
+            font-family: $jose;
+            text-transform: uppercase;
+            color: #000;
+            padding: 0 0 0.5em;
+        }
+
+        p {
+            color: #000;
+            font-size: 15px;
+            font-family: $roboto;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 100px 0 50px;
+        
+       .text-cont {
+            text-align: center;
+            padding-top: 40px;
+        
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding: 50px 0;
+
+        .img-cont {
+            img {
+                width: 250px;
+            }
+        }
+    }
+}

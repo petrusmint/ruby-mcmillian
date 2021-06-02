@@ -1,2 +1,0 @@
-<span class="name"><i class="fas fa-user" aria-hidden="true"></i><a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn">{{ get_the_author() }}</a></span>
-<span class="date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>{{ get_the_date("F j, Y") }}</span>

@@ -1,0 +1,61 @@
+#reviews {
+    background: url('../images/review.jpg');
+    background-size: cover;
+    padding: 100px 0;
+
+    .text-cont {
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+            font-family: $jose;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 0 0 0.6em;
+        }
+
+        .review-list {
+            height: 100%;
+            background: $color2;
+            padding: 50px 40px;
+
+            p {
+                font-family: $roboto;
+                font-size: 15px;
+            }
+
+            b {
+                font-family: $mont;
+                font-size: 16px;
+                font-weight: 800;
+            }
+        }
+
+        .splide__arrows {
+            display: none;
+        }
+
+        .splide__pagination {
+            bottom: -1.5em;
+            left: 1em;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .text-cont {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+    
+    @include media-breakpoint-down(xs) {
+        padding: 50px 0;
+        
+        .text-cont {
+            .review-list {
+                padding: 20px;
+            }
+        }
+    }
+}
