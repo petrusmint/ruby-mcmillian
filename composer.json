@@ -23,7 +23,9 @@
         "wpackagist-plugin/wck-custom-fields-and-custom-post-types-creator": "*",
         "wpackagist-plugin/wordfence": "*",
         "wpackagist-plugin/easy-wp-smtp": "*",
-        "wpackagist-plugin/wordpress-seo": "*"
+        "wpackagist-plugin/wordpress-seo": "*",
+        "wpackagist-plugin/foobox-image-lightbox": "^2.7",
+        "wpackagist-plugin/foogallery": "^2.0"
     },
     "repositories": [
         {
