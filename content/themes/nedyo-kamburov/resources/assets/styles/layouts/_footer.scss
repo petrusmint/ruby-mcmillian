@@ -1,0 +1,149 @@
+footer {
+  padding: 0;
+  overflow-x: hidden;
+  text-align: center;
+  background: $color6;
+
+  p.copyright {
+    font-size: 15px;
+    color: $footer;
+    line-height: 1.3;
+    padding: 20px 0 !important;
+
+    em {
+      font-style: normal;
+      position: relative;
+    }
+
+    svg,
+    .fab,
+    .fas {
+      font-size: 5px;
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+      margin: 0 2px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $footer;
+      transition: color 0.8s ease;
+
+      &:hover {
+        color: $footer;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      line-height: 20px;
+      padding: 0 !important;
+      text-align: center;
+
+      span {
+        background-size: 16px auto;
+        padding: 5px 0 5px 22px;
+        background-position: 0 3px;
+        margin-left: 0;
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      span {
+        background-size: 11px auto;
+        padding: 0 0 0 20px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    p.copyright {
+      padding: 15px !important;
+      font-size: 13px;
+    }
+  }
+}
+
+.footer-social {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    a {
+      display: inline-block;
+      color: $color3;
+      border-radius: 30px;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      line-height: 58px;
+      background: $color3;
+      transition: border-radius 0.5s;
+
+      svg,
+      em {
+        color: $icons;
+        font-size: 25px;
+        font-style: normal;
+        transition: transform 0.8s ease;
+      }
+    }
+
+    &:hover {
+      a {
+        background: darken($color1, 15%);
+      }
+    }
+  }
+
+  li.anchor {
+    a {
+      background: url('../images/anchor.png');
+      background-size: cover;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        width: 55px;
+        height: 55px;
+        line-height: 62px;
+
+        svg,
+        .fab,
+        .fas {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    li {
+      margin: 0 10px;
+
+      a {
+        width: 45px;
+        height: 45px;
+        line-height: 46px;
+
+        svg,
+        .fas,
+        .fab {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
